@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "remoji",
+  "description": "This extension recovers all emojis replaced to images",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "permissions": [ "tabs" ],
+  "icons": { "128": "icon.png" }
+}
